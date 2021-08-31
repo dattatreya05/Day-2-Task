@@ -1,0 +1,21 @@
+1. List 5 difference between Browser JS(console) v Nodejs
+
+## Node.js:
+1. The Node.js javascript code gets executed outside the browser as it is an interpreter as well as an environment for running javascript and used for server-side applications as well as client side application.
+2. In nutshell we can say node.js is used for backend apllications.
+3. Node.js has full system access i.e can read and write directly to the file system like any other application that also concludes that we can write complete software using Node.js.
+4. In the Node.js the many objects are missing objects like "window", "location" and "document".
+5. The Node.js is only runs in V8 engine which is used by Google chrome.
+6. The Node.js is module system because it is everything mandayory to keep inside a module.
+7. In Node.js you can control the environment. Unless you are building an open source application that anyone can deploy anywhere, you know which version of Node.js you will run the application on.
+8. For time being we are using require() in Node.js. 
+
+## Browser.js:
+1. Browser.js is mainly used for client-side applications like validations on a web page or dynamic page display and as the name suggests it gets executed in the browser.
+2. Where as in the nutshell we can say browser.js is used for frontend applications. 
+3. It is sandboxed for the safety purposes and have access limited to the browser. Now, that also makes it important that we should refrain from running any untrusted Javascript in Node.js.
+4. In the browser.js has all these are pre-defined objects but the browser has missing objects like "gloabal" and "require".
+5. The browser.js can runs in any engine like Spider monkey (Firefox), JavaScript core (Safari), V8 (Google chrome) ..etc.,
+6. The moduling is not mandatory for browser javascript.
+7. In browser environment, where you don't get the luxury to choose what browser your visitors will use, this is very convinent.
+8. For the time we are using "import" in browser.js. 

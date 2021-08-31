@@ -1,0 +1,14 @@
+2). Watch & summary 5 points - How does the browser actually render a website.
+ 
+1. The browser actually renders a website by the parsing of the HTML and CSS, by the javascript then they will render a tree after that do the layout and painting.
+2. Parsing is nothing but analyzing and converting a program into an format that a runtime environment actually run, for example javascript engine inside browsers.
+3. The browser parses HTML into a DOM tree. HTML parsing involves tokenization and tree construction. HTML tokens include start and end tags, as well as attribute names and values. If the document is well-formed, parsing it is straightforward and faster. The parser parses tokenized input into the document, building up the document tree.
+4. The parse tree will be having html, head, body, paragraph, text, division, spam, test similarly applying to DOM tree elements.
+5. When the HTML parser finds non-blocking resources, such as an image, the browser will request those resources and continue parsing. Parsing can continue when a CSS file is encountered, but <script> tag particularly those without an async or defer attribute blocks rendering, and pauses parsing of HTML.
+6. When the browser encounters CSS styles, it parses the text into the CSS Object Model i.e CSSOM a data structure i.e it is having selectors and declarations it then uses for styling layouts and paintings.
+7. The DOM and CSSOM combiles the two objects models, style resolution and this is the actual representation of what will show on screen and it is not 1-to-1 mapping of our HTML.
+8. The render tree is not having the non visual elements like head, script, title .etc.., and nodes are hidden via display none.
+9. The browser creates the layout of each individual render tree node and the layout consists of size of each node in pixels and where it will be printed in the screen. So the process we can calles as recursive process or reflow process.
+10. We are having list of geometries that need to be printed in the screen. So the elements in the render tree can overlap each other and they can have CSS properties that make them frequently change the look, position, or geometry (such as animations) the browser creates a layer for it.
+11. Creating layers helps the browser efficiently perform painting operations throughout the lifecycle of a web page such as while scrolling or resizing the browser window. Having layers also help the browser correctly draw elements in the stacking order (along the z-axis) as they were intended by the developer. 
+
